@@ -1,0 +1,16 @@
+{
+  "name": "openrgb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "serialport": "^6.2.0",
+    "wait-until": "0.0.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "t4ils <t4ils.dev@gmail.com> (https://t4ils.gitlab.io)",
+  "license": "MIT"
+}
