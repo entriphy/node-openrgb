@@ -38,6 +38,7 @@ All 5 bytes are **required**, or the command will be malformed.
 
 #### Modes
 The device comes with various modes/animations. Each modifier is required in the command (except multiple colors). To apply the mode, simply replace the 2nd byte with the hex value of the mode you want.
+
 | Mode     | Hex Value | Modifiers |
 | -------  | --------- | --------- |
 | Fixed    | `00`      | Technically none, but NZXT's CAM sets the speed/size <br> to `02` for some reason |
@@ -53,6 +54,7 @@ The device comes with various modes/animations. Each modifier is required in the
 
 #### Modifiers
 This is the part where it kind of gets complicated, but here's a table I guess:
+
 | Mode     | How to apply | Type |
 | -------  | ------------ | -----|
 | Speed    | Add `1 * speed` to the 5th byte | Integer (0 - 4) |
