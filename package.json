@@ -8,6 +8,7 @@
     "wait-until": "0.0.2"
   },
   "devDependencies": {},
+  "repository": "gitlab:t4ils/node-openrgb",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
