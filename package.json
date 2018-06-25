@@ -1,6 +1,6 @@
 {
-  "name": "openrgb",
-  "version": "1.0.0",
+  "name": "node-openrgb",
+  "version": "0.0.1",
   "description": "",
   "main": "index.js",
   "dependencies": {
