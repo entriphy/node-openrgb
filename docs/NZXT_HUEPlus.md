@@ -40,26 +40,26 @@ All 5 bytes are **required**, or the command will be malformed.
 The device comes with various modes/animations. Each modifier is required in the command (except multiple colors). To apply the mode, simply replace the 2nd byte with the hex value of the mode you want.
 | Mode     | Hex Value | Modifiers |
 | -------  | --------- | --------- |
-| Fixed    | `00`      | Technically none, but NZXT's CAM sets the speed/size <br> to `02` for some reason
+| Fixed    | `00`      | Technically none, but NZXT's CAM sets the speed/size <br> to `02` for some reason |
 | Fading   | `01`      | Speed, multiple colors    |
-| Spectrum | `02`      | Speed, backwards
-| Marquee  | `03`      | Speed, size, backwards
-| Covering Marquee | `04` | Speed, backwards, multiple colors
-| Alternating | `05` | Speed, size, moving, multiple colors (**required**)
-| Pulse | `06` | Speed, multiple colors
-| Breathing | `07` | Speed, multiple colors
-| Candle | `09` | None
-| Wings | `0c` | Speed
+| Spectrum | `02`      | Speed, backwards |
+| Marquee  | `03`      | Speed, size, backwards |
+| Covering Marquee | `04` | Speed, backwards, multiple colors |
+| Alternating | `05` | Speed, size, moving, multiple colors (**required**) |
+| Pulse | `06` | Speed, multiple colors |
+| Breathing | `07` | Speed, multiple colors |
+| Candle | `09` | None |
+| Wings | `0c` | Speed |
 
 #### Modifiers
 This is the part where it kind of gets complicated, but here's a table I guess:
 | Mode     | How to apply | Type |
 | -------  | ------------ | -----|
-| Speed    | Add `1 * speed` to the 5th byte | Integer (0 - 4)
-| Size     | Add `8 * size` to the 5th byte | Integer (0 - 3)
-| Moving   | Add 8 to the 4th byte | Boolean
-| Backwards   | Add 10 to the 4th byte | Boolean
-| Multiple colors | See the "Multiple colors" section | Integer
+| Speed    | Add `1 * speed` to the 5th byte | Integer (0 - 4) |
+| Size     | Add `8 * size` to the 5th byte | Integer (0 - 3) |
+| Moving   | Add 8 to the 4th byte | Boolean |
+| Backwards   | Add 10 to the 4th byte | Boolean |
+| Multiple colors | See the "Multiple colors" section | Integer (intervals of 32) |
 
 #### Colors
 The device accepts colors in the GRB order.  In order to add colors to the command:
