@@ -1,11 +1,11 @@
 {
   "name": "node-openrgb",
-  "version": "0.0.6",
+  "version": "0.1.0",
   "description": "",
   "main": "index.js",
   "dependencies": {
     "node-hid": "^0.7.4",
-    "serialport": "^7.0.2",
+    "serialport": "^7.1.1",
     "wait-until": "0.0.2"
   },
   "devDependencies": {},
